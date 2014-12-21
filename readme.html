@@ -1,0 +1,93 @@
+<h1 id="static-mockup-of-new-site">Static mockup of new site</h1>
+<p><strong>Use Parallels</strong> http://macbookpro is equivalent to http://localhost<br />See: <a href="http://www.toddvachon.com/2013/04/connecting-parallels-vms-to-your-mac-localhost-file-for-testing/349">Connecting Parallels VMs to your Mac localhost file for testing</a></p>
+<h3 id="thu-dec-11-193109-cst-2014">Thu Dec 11 19:31:09 CST 2014</h3>
+<p>a lot of time setting up icon system<br />* started with c. coyier's defs/use system<br />* moved to grunticon, which uses background images<br />* so that's where we're at now; back to defs/use at some point?</p>
+<h3 id="fri-dec-12-092037-cst-2014">Fri Dec 12 09:20:37 CST 2014</h3>
+<ul>
+<li>installed svgo<br /><code>sudo npm install svgo -g</code>
+<ul>
+<li>ran it on a folder of svg files<br /><code>svgo -f svg/</code></li>
+</ul></li>
+<li>trying defs/use again<br /></li>
+<li><p>email from Ilya re: ads:<br />&gt; As far as responsive design we can take smaller size for mobile. &gt; Would you be able to accommodate 320x50? In addition please make &gt; sure you don’t just hide the elements that contain ad units when &gt; dealing with responsive design. Simply hiding doesn’t stop ad &gt; delivery which generates fake impressions. Use below wrapper examples &gt; in relation to your responsive breaking points. Let me know if you &gt; have questions aboit it.</p>
+<pre><code>// Desktop ads
+var ehs_width = (window.innerWidth &gt; 0) ? window.innerWidth : screen.width;
+if (ehs_width&gt;767) {
+…ADCODE…
+}
+
+// Mobile ads
+var ehs_width = (window.innerWidth &gt; 0) ? window.innerWidth : screen.width;
+if (ehs_width&lt;=767) {
+…ADCODE…
+}&gt;)</code></pre></li>
+<li><p>using adobe edge inspect on my android 4.3 phone, I see that svg defs/use doesn't work. so back to background system?</p></li>
+</ul>
+<h3 id="wed-dec-17-101309-cst-2014">Wed Dec 17 10:13:09 CST 2014</h3>
+<ul>
+<li>deploys icon-font</li>
+<li><a href="http://css-tricks.com/examples/IconFont/">icon fonts on css-tricks</a></li>
+<li><span class="citation">[@font-face + base64 syntax]</span>(http://sosweetcreative.com/2613/font-face-and-base64-data-uri)</li>
+<li><a href="http://www.opinionatedgeek.com/dotnet/tools/Base64Encode/">base64 encoder</a></li>
+<li><a href="http://codepen.io/bradfrost/pen/sHvaz">pattern for our nav</a></li>
+</ul>
+<h3 id="thu-dec-18-113058-cst-2014">Thu Dec 18 11:30:58 CST 2014</h3>
+<h3 id="fri-dec-19-082430-cst-2014">Fri Dec 19 08:24:30 CST 2014</h3>
+<ul>
+<li>should we switch form <a href="https://econsultancy.com/blog/65511-hamburger-menus-for-mobile-navigation-do-they-work">hamburger to &quot;menu&quot;</a>?</li>
+<li>(Breakpoint wiki)[https://github.com/at-import/breakpoint/wiki]</li>
+<li>First swing at extracting assets from photoshop
+<ol style="list-style-type: decimal">
+<li>Name layer with what we want the file to be called (ex., caudle-omed)</li>
+<li>Right-click on that layer and choose &quot;Extract Assets ...&quot;</li>
+<li>Try these for suffixes:
+<ul>
+<li>@.25</li>
+<li>@.33</li>
+<li>@.50</li>
+<li>@.75<br /></li>
+</ul></li>
+<li>Example resulting filename: caudle-omed@.33.jpg</li>
+</ol></li>
+<li>We can <a href="http://stackoverflow.com/questions/16094423/is-it-considered-bad-practise-to-use-html-in-jade">add straight html into jade</a></li>
+<li>In twentythirteen, check out the .search-field:focus for an on-demand search bar</li>
+<li>Better than than .container: .context?</li>
+<li><a href="http://scottjehl.github.io/picturefill/">Picturefill!</a></li>
+</ul>
+<h3 id="sat-dec-20-062816-cst-2014">Sat Dec 20 06:28:16 CST 2014</h3>
+<ul>
+<li>Good <a href="http://www.zell-weekeat.com/context-with-susy/">article</a> about Susy contexts</li>
+<li><a href="http://www.git-tower.com/learn/">Possible sticker hover animation</a></li>
+<li>good candidates for minor breakpoints:
+<ul>
+<li><strong>584px</strong> That's when the body text column starts to get wider than the default desktop measure of 552px</li>
+</ul></li>
+</ul>
+<h3 id="sun-dec-21-060238-cst-2014">Sun Dec 21 06:02:38 CST 2014</h3>
+<ul>
+<li>Thumbnail size: 140px x 93px</li>
+<li><strong>related</strong> module
+<ul>
+<li>uses default thumbnail size 140pxx93px</li>
+</ul></li>
+<li>Our viewport is scrollable horizontally for the moment because the leaderboard ad is sticking out</li>
+<li>Adds new repo for deploying build: eo-build
+<ul>
+<li>so now we have a repo within a repo</li>
+<li>added a robots meta tag to prevent searching enginges from searching the web page</li>
+<li>deploying on <a href="http://eo-build.10rempatrick.com">eo-build.10rempatrick.com</a>
+<ul>
+<li>done: Sun Dec 21 10:14:21 CST 2014</li>
+</ul></li>
+</ul></li>
+<li>EHS tag config script contains this beauty.
+<ul>
+<li><pre><code>document.write(&#39;&lt;scr&#39;+&#39;ipt type=&quot;text/javascript&quot; src=&quot;&#39;+ehs_tagsrc+&#39;&quot;&gt;&lt;/scr&#39;+&#39;ipt&gt;&#39;);</code></pre></li>
+<li>How to avoid it?
+<ul>
+<li>maybe this way: <a href="http://www.feedthebot.com/pagespeed/avoid-document-write.html">How to fix document.write</a></li>
+</ul></li>
+</ul></li>
+<li><a href="https://github.com/filamentgroup/AppendAround">AppendAround</a> for moving content around based on viewport size</li>
+<li>PageSpeed on eo-build: 57/100 mobile speed Sun Dec 21 11:36:48 CST 2014</li>
+</ul>
