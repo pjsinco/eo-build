@@ -1,15 +1,13 @@
-#Static mockup of new site
-
-**Use Parallels**
-http://macbookpro is equivalent to http://localhost  
-See: [Connecting Parallels VMs to your Mac localhost file for testing](http://www.toddvachon.com/2013/04/connecting-parallels-vms-to-your-mac-localhost-file-for-testing/349)
-
+#notes so yeah
 
 ###Thu Dec 11 19:31:09 CST 2014###
-a lot of time setting up icon system  
-* started with c. coyier's defs/use system  
-* moved to grunticon, which uses background images  
-* so that's where we're at now; back to defs/use at some point?  
+* **Use Parallels**
+    * http://macbookpro is equivalent to http://localhost  
+    * See: [Connecting Parallels VMs to your Mac localhost file for testing](http://www.toddvachon.com/2013/04/connecting-parallels-vms-to-your-mac-localhost-file-for-testing/349)
+* a lot of time setting up icon system  
+    * started with c. coyier's defs/use system  
+    * moved to grunticon, which uses background images  
+    * so that's where we're at now; back to defs/use at some point?  
 
 ###Fri Dec 12 09:20:37 CST 2014
 * installed svgo  
@@ -40,7 +38,7 @@ a lot of time setting up icon system
     }>)
     ```
 
-* using adobe edge inspect on my android 4.3 phone, I see that svg defs/use doesn't work. so back to background system?
+* using adobe edge inspect on my android 2.3 phone, I see that svg defs/use doesn't work. so back to background system?
 
 ###Wed Dec 17 10:13:09 CST 2014
 * deploys icon-font
@@ -54,7 +52,7 @@ a lot of time setting up icon system
 
 ###Fri Dec 19 08:24:30 CST 2014
 * should we switch form [hamburger to "menu"](https://econsultancy.com/blog/65511-hamburger-menus-for-mobile-navigation-do-they-work)?
-* (Breakpoint wiki)[https://github.com/at-import/breakpoint/wiki]
+* [Breakpoint wiki](https://github.com/at-import/breakpoint/wiki)
 * First swing at extracting assets from photoshop
     1. Name layer with what we want the file to be called (ex., caudle-omed)
     2. Right-click on that layer and choose "Extract Assets ..."
@@ -95,4 +93,25 @@ a lot of time setting up icon system
     * How to avoid it?
         * maybe this way: [How to fix document.write](http://www.feedthebot.com/pagespeed/avoid-document-write.html)
 * [AppendAround](https://github.com/filamentgroup/AppendAround) for moving content around based on viewport size
+    * [demo](http://filamentgroup.github.io/AppendAround/)
 * PageSpeed on eo-build: 57/100 mobile speed Sun Dec 21 11:36:48 CST 2014
+
+### Mon Dec 22 04:19:33 CST 2014
+* Hide pull quotes in smallest screens?
+    * Might be a good place for an ad
+* git commit from within vim
+```
+:! git add % ; git commit -m "[commit message]"
+```
+* [ Hmmm ](http://stackoverflow.com/questions/1675464/how-can-i-combine-these-git-commands):
+    > I say this: Don't do ```git add .```  
+
+    > Instead do ```git add -u```. Even better, skip the add stage and do ```git commit -a -m"blah"```
+* [pandoc](http://johnmacfarlane.net/pandoc/demos.html)
+```pandoc -s -c pandoc.css README.md -o readme.html```
+    *  ```-s``` standalone
+    *  ```-c``` link to stylsheet
+    *  ```-o``` output
+* TODO need a max-width on body text
+* TODO ~~our small-screen viewport is floaty horizontally~~ Mon Dec 22 14:02:18 CST 2014
+* Our Typekit [colophon](https://typekit.com/colophons/vdi5qvx)

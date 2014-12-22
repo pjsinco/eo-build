@@ -9,10 +9,21 @@
   <link rel="stylesheet" href="pandoc.css" type="text/css" />
 </head>
 <body>
-<h1 id="static-mockup-of-new-site">Static mockup of new site</h1>
-<p><strong>Use Parallels</strong> http://macbookpro is equivalent to http://localhost<br />See: <a href="http://www.toddvachon.com/2013/04/connecting-parallels-vms-to-your-mac-localhost-file-for-testing/349">Connecting Parallels VMs to your Mac localhost file for testing</a></p>
+<h1 id="notes-so-yeah">notes so yeah</h1>
 <h3 id="thu-dec-11-193109-cst-2014">Thu Dec 11 19:31:09 CST 2014</h3>
-<p>a lot of time setting up icon system<br />* started with c. coyier's defs/use system<br />* moved to grunticon, which uses background images<br />* so that's where we're at now; back to defs/use at some point?</p>
+<ul>
+<li><strong>Use Parallels</strong>
+<ul>
+<li>http://macbookpro is equivalent to http://localhost<br /></li>
+<li>See: <a href="http://www.toddvachon.com/2013/04/connecting-parallels-vms-to-your-mac-localhost-file-for-testing/349">Connecting Parallels VMs to your Mac localhost file for testing</a></li>
+</ul></li>
+<li>a lot of time setting up icon system
+<ul>
+<li>started with c. coyier's defs/use system<br /></li>
+<li>moved to grunticon, which uses background images<br /></li>
+<li>so that's where we're at now; back to defs/use at some point?</li>
+</ul></li>
+</ul>
 <h3 id="fri-dec-12-092037-cst-2014">Fri Dec 12 09:20:37 CST 2014</h3>
 <ul>
 <li>installed svgo<br /><code>sudo npm install svgo -g</code>
@@ -32,7 +43,7 @@ var ehs_width = (window.innerWidth &gt; 0) ? window.innerWidth : screen.width;
 if (ehs_width&lt;=767) {
 …ADCODE…
 }&gt;)</code></pre></li>
-<li><p>using adobe edge inspect on my android 4.3 phone, I see that svg defs/use doesn't work. so back to background system?</p></li>
+<li><p>using adobe edge inspect on my android 2.3 phone, I see that svg defs/use doesn't work. so back to background system?</p></li>
 </ul>
 <h3 id="wed-dec-17-101309-cst-2014">Wed Dec 17 10:13:09 CST 2014</h3>
 <ul>
@@ -46,7 +57,7 @@ if (ehs_width&lt;=767) {
 <h3 id="fri-dec-19-082430-cst-2014">Fri Dec 19 08:24:30 CST 2014</h3>
 <ul>
 <li>should we switch form <a href="https://econsultancy.com/blog/65511-hamburger-menus-for-mobile-navigation-do-they-work">hamburger to &quot;menu&quot;</a>?</li>
-<li>(Breakpoint wiki)[https://github.com/at-import/breakpoint/wiki]</li>
+<li><a href="https://github.com/at-import/breakpoint/wiki">Breakpoint wiki</a></li>
 <li>First swing at extracting assets from photoshop
 <ol style="list-style-type: decimal">
 <li>Name layer with what we want the file to be called (ex., caudle-omed)</li>
@@ -99,8 +110,33 @@ if (ehs_width&lt;=767) {
 <li>maybe this way: <a href="http://www.feedthebot.com/pagespeed/avoid-document-write.html">How to fix document.write</a></li>
 </ul></li>
 </ul></li>
-<li><a href="https://github.com/filamentgroup/AppendAround">AppendAround</a> for moving content around based on viewport size</li>
+<li><a href="https://github.com/filamentgroup/AppendAround">AppendAround</a> for moving content around based on viewport size
+<ul>
+<li><a href="http://filamentgroup.github.io/AppendAround/">demo</a></li>
+</ul></li>
 <li>PageSpeed on eo-build: 57/100 mobile speed Sun Dec 21 11:36:48 CST 2014</li>
+</ul>
+<h3 id="mon-dec-22-041933-cst-2014">Mon Dec 22 04:19:33 CST 2014</h3>
+<ul>
+<li>Hide pull quotes in smallest screens?
+<ul>
+<li>Might be a good place for an ad</li>
+</ul></li>
+<li><p>git commit from within vim</p>
+<pre><code>:! git add % ; git commit -m &quot;[commit message]&quot;</code></pre></li>
+<li><p><a href="http://stackoverflow.com/questions/1675464/how-can-i-combine-these-git-commands">Hmmm</a>: &gt; I say this: Don't do <code>git add .</code></p>
+<blockquote>
+<p>Instead do <code>git add -u</code>. Even better, skip the add stage and do <code>git commit -a -m&quot;blah&quot;</code></p>
+</blockquote></li>
+<li><a href="http://johnmacfarlane.net/pandoc/demos.html">pandoc</a> <code>pandoc -s -c pandoc.css README.md -o readme.html</code>
+<ul>
+<li><code>-s</code> standalone</li>
+<li><code>-c</code> link to stylsheet</li>
+<li><code>-o</code> output</li>
+</ul></li>
+<li>TODO need a max-width on body text</li>
+<li>TODO <del>our small-screen viewport is floaty horizontally</del> Mon Dec 22 14:02:18 CST 2014</li>
+<li><p>Our Typekit <a href="https://typekit.com/colophons/vdi5qvx">colophon</a></p></li>
 </ul>
 </body>
 </html>

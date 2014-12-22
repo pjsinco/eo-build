@@ -537,27 +537,32 @@ img {
       padding: .5em 0 .5em 2em; }
 
 /* line 1, ../../../components/sass/modules/_ad.scss */
-.ad--wide-shallow, .ad--med-rect {
-  margin: .5em auto; }
+.ad--med-rect, .ad--wide-shallow {
+  margin: 0 auto; }
 
 /* line 5, ../../../components/sass/modules/_ad.scss */
 .ad {
   /*@include container();*/ }
   /* line 8, ../../../components/sass/modules/_ad.scss */
+  .ad--med-rect {
+    width: 300px; }
+    @media screen and (min-width: 36em) and (max-width: 48em) {
+      /* line 8, ../../../components/sass/modules/_ad.scss */
+      .ad--med-rect {
+        float: right;
+        margin-left: 1em; } }
+  /* line 18, ../../../components/sass/modules/_ad.scss */
   .ad__img {
     display: block;
     margin: 0 auto; }
-  /* line 13, ../../../components/sass/modules/_ad.scss */
+  /* line 23, ../../../components/sass/modules/_ad.scss */
   .ad--wide-shallow {
-    width: 99%; }
+    width: 100%; }
     @media screen and (min-width: 30em) {
-      /* line 13, ../../../components/sass/modules/_ad.scss */
+      /* line 23, ../../../components/sass/modules/_ad.scss */
       .ad--wide-shallow {
         /*width: 728px;*/ } }
-  /* line 22, ../../../components/sass/modules/_ad.scss */
-  .ad--med-rect {
-    width: 300px; }
-  /* line 27, ../../../components/sass/modules/_ad.scss */
+  /* line 32, ../../../components/sass/modules/_ad.scss */
   .ad:before {
     color: #6b7574;
     content: "Advertisement";
@@ -569,8 +574,9 @@ img {
     font-size: .5em;
     letter-spacing: .25em;
     text-align: center; }
-  /* line 40, ../../../components/sass/modules/_ad.scss */
+  /* line 45, ../../../components/sass/modules/_ad.scss */
   .ad:after {
+    margin-top: .5em;
     content: '';
     width: 100%;
     display: block;
@@ -580,19 +586,19 @@ img {
 .story__title {
   font-family: "adelle", Georgia, serif;
   line-height: 1.3; }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 43em) {
   /* line 24, ../../../components/sass/modules/_story.scss */
   .story__social--top {
     width: 10.25641%;
     float: left;
     margin-right: 2.5641%; } }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 43em) {
   /* line 38, ../../../components/sass/modules/_story.scss */
   .story__body-text {
     width: 87.17949%;
     float: right;
     margin-right: 0; } }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 36em) {
   /* line 45, ../../../components/sass/modules/_story.scss */
   .story__footer {
     width: 87.17949%;
@@ -612,10 +618,9 @@ img {
 
 /* line 1, ../../../components/sass/modules/_content.scss */
 .content {
-  padding-top: 0;
   padding-right: .5em;
-  padding-bottom: 0;
-  padding-left: .5em; }
+  padding-left: .5em;
+  margin-top: 1em; }
   @media screen and (min-width: 20em) {
     /* line 1, ../../../components/sass/modules/_content.scss */
     .content {
@@ -623,24 +628,24 @@ img {
       padding-right: .5em;
       padding-bottom: 0;
       padding-left: .5em; } }
-  @media screen and (min-width: 30em) {
+  @media (min-width: 30em) {
     /* line 1, ../../../components/sass/modules/_content.scss */
     .content {
       padding-right: 1em;
       padding-left: 1em; } }
-  @media screen and (min-width: 48em) {
+  @media (min-width: 48em) {
     /* line 1, ../../../components/sass/modules/_content.scss */
     .content {
       padding-right: 2em;
       padding-left: 2em; } }
   @media screen and (min-width: 64em) {
-    /* line 31, ../../../components/sass/modules/_content.scss */
+    /* line 30, ../../../components/sass/modules/_content.scss */
     .content__main {
       width: 66.10169%;
       float: left;
       margin-right: 1.69492%; } }
   @media screen and (min-width: 64em) {
-    /* line 37, ../../../components/sass/modules/_content.scss */
+    /* line 36, ../../../components/sass/modules/_content.scss */
     .content__secondary {
       width: 32.20339%;
       float: right;
@@ -684,7 +689,7 @@ img {
   /* line 18, ../../../components/sass/modules/_social.scss */
   .social__icon {
     display: inline-block; }
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: 43em) {
       /* line 18, ../../../components/sass/modules/_social.scss */
       .social__icon {
         display: block; } }
@@ -713,24 +718,26 @@ img {
 /* line 1, ../../../components/sass/modules/_pq.scss */
 .pq {
   overflow: hidden;
-  *zoom: 1; }
+  *zoom: 1;
+  display: none; }
   @media screen and (min-width: 48em) {
     /* line 1, ../../../components/sass/modules/_pq.scss */
     .pq {
+      display: block;
       float: left;
       position: relative;
       right: 14.70588%;
       width: 41.17647%;
       margin-right: -11.76471%;
       /*margin-right: -4em;*/ } }
-  /* line 15, ../../../components/sass/modules/_pq.scss */
+  /* line 17, ../../../components/sass/modules/_pq.scss */
   .pq__body {
     font-family: 'adelle', serif;
     font-weight: bold;
     font-size: 2em;
     text-align: center; }
     @media screen and (min-width: 48em) {
-      /* line 15, ../../../components/sass/modules/_pq.scss */
+      /* line 17, ../../../components/sass/modules/_pq.scss */
       .pq__body {
         text-align: right; } }
 
@@ -776,3 +783,32 @@ img {
   /* line 45, ../../../components/sass/modules/_media.scss */
   .media__link {
     color: inherit; }
+
+/* line 5, ../../../components/sass/modules/_rover.scss */
+.rover-don-parent-a {
+  display: block; }
+  @media screen and (min-width: 48em) {
+    /* line 5, ../../../components/sass/modules/_rover.scss */
+    .rover-don-parent-a {
+      display: none; } }
+/* line 13, ../../../components/sass/modules/_rover.scss */
+.rover-don-parent-b {
+  display: none; }
+  @media screen and (min-width: 48em) {
+    /* line 13, ../../../components/sass/modules/_rover.scss */
+    .rover-don-parent-b {
+      display: block; } }
+/* line 24, ../../../components/sass/modules/_rover.scss */
+.rover-peggy-parent-a {
+  display: block; }
+  @media screen and (min-width: 48em) {
+    /* line 24, ../../../components/sass/modules/_rover.scss */
+    .rover-peggy-parent-a {
+      display: none; } }
+/* line 32, ../../../components/sass/modules/_rover.scss */
+.rover-peggy-parent-b {
+  display: none; }
+  @media screen and (min-width: 48em) {
+    /* line 32, ../../../components/sass/modules/_rover.scss */
+    .rover-peggy-parent-b {
+      display: block; } }
