@@ -101,7 +101,7 @@
     * Might be a good place for an ad
 * git commit from within vim
 ```
-:! git add % ; git commit -m "[commit message]"
+:! git add % ; git commit -m "mods readme"
 ```
 * [ Hmmm ](http://stackoverflow.com/questions/1675464/how-can-i-combine-these-git-commands):
     > I say this: Don't do ```git add .```  
@@ -113,6 +113,66 @@
     *  ```-c``` link to stylsheet
     *  ```-o``` output
 * TODO need a max-width on body text
+    * maybe 570px/35.625em?
 * TODO ~~our small-screen viewport is floaty horizontally~~ Mon Dec 22 14:02:18 CST 2014
 * Our Typekit [colophon](https://typekit.com/colophons/vdi5qvx)
 * PageSpeed on eo-build: 57/100 mobile Mon Dec 22 16:42:44 CST 2014
+
+### Tue Dec 23 06:18:02 CST 2014
+* susy grids 
+    * [example](http://sassmeister.com/gist/8381773), [zell](http://www.zell-weekeat.com/tag/susy/)
+* TODO ~~we need a fat gutter between our main column and secondary column on article page, without breaking our rhythm~~ Tue Dec 23 09:19:09 CST 2014
+    * OK: 
+        * we set up a $gridpage
+        ```
+        $gridpage: (
+          global-box-sizing: border-box,
+          columns: 12,
+          container: 62em, // that'll give us a med-rect ad in the secondary column with a fat gutter
+          gutters: .25,
+        );
+        ```
+
+        * the main column
+        ```
+        @include span(8 of $gridpage);
+        ```
+
+        * the secondary column
+        ```
+        /* this % value will give us our fat gutter and hold a med-rect ad */
+        @include span(30% last); 
+        ```
+
+        * see grid-play.html and _grid-play.scss
+
+* picturefill: how many versions, and what sizes, of the image to use?
+    * here's what we're working with now:
+        ```
+                  default --> 410px (image size)
+        @min-width: 410px --> 620px
+        @min-width: 652px --> 930px
+        ```
+    * this is working well so far
+
+* don't forget sometimes we need to ```grunt compile-jade``` after switching branches 
+    * shortcut: ```grcj```
+
+* TODO ~~more outside padding on medium screens~~2014-23-12
+
+* maybe we don't need a page wrapper?
+    * but the nice thing is we can set a ```position: relative;``` on it
+    * maybe we can set it on .content
+    * so we're flying w/out a wrapper *Tue Dec 23 16:30:30 CST 2014*
+
+* so we break into our 2/3, 1/3 page grid on an article, right now, at 896px ($large-minor-start)
+    * otherwise, we're 1 col on those smaller screens
+
+* **TODAY** Blueprints + girders -- focusing on structure, markup as clear and simple as possible
+
+* so our **story** module has a 95% ```container``` to start
+    * otherwise it would bleed to the edges, so that's how we're controlling our outside spacing
+    * *w-w-w-wait:* our **story** should ```span(8 of 12)```, no? not be a ```container```?
+
+* TODO we lost our figcaption --> needs a **container** mixin
+

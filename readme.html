@@ -123,7 +123,7 @@ if (ehs_width&lt;=767) {
 <li>Might be a good place for an ad</li>
 </ul></li>
 <li><p>git commit from within vim</p>
-<pre><code>:! git add % ; git commit -m &quot;[commit message]&quot;</code></pre></li>
+<pre><code>:! git add % ; git commit -m &quot;mods readme&quot;</code></pre></li>
 <li><p><a href="http://stackoverflow.com/questions/1675464/how-can-i-combine-these-git-commands">Hmmm</a>: &gt; I say this: Don't do <code>git add .</code></p>
 <blockquote>
 <p>Instead do <code>git add -u</code>. Even better, skip the add stage and do <code>git commit -a -m&quot;blah&quot;</code></p>
@@ -134,10 +134,69 @@ if (ehs_width&lt;=767) {
 <li><code>-c</code> link to stylsheet</li>
 <li><code>-o</code> output</li>
 </ul></li>
-<li>TODO need a max-width on body text</li>
+<li>TODO need a max-width on body text
+<ul>
+<li>maybe 570px/35.625em?</li>
+</ul></li>
 <li>TODO <del>our small-screen viewport is floaty horizontally</del> Mon Dec 22 14:02:18 CST 2014</li>
 <li>Our Typekit <a href="https://typekit.com/colophons/vdi5qvx">colophon</a></li>
 <li><p>PageSpeed on eo-build: 57/100 mobile Mon Dec 22 16:42:44 CST 2014</p></li>
+</ul>
+<h3 id="tue-dec-23-061802-cst-2014">Tue Dec 23 06:18:02 CST 2014</h3>
+<ul>
+<li>susy grids
+<ul>
+<li><a href="http://sassmeister.com/gist/8381773">example</a>, <a href="http://www.zell-weekeat.com/tag/susy/">zell</a></li>
+</ul></li>
+<li>TODO <del>we need a fat gutter between our main column and secondary column on article page, without breaking our rhythm</del> Tue Dec 23 09:19:09 CST 2014
+<ul>
+<li>OK:
+<ul>
+<li><p>we set up a $gridpage</p>
+<pre><code>$gridpage: (
+  global-box-sizing: border-box,
+  columns: 12,
+  container: 62em, // that&#39;ll give us a med-rect ad in the secondary column with a fat gutter
+  gutters: .25,
+);</code></pre></li>
+<li><p>the main column</p>
+<pre><code>@include span(8 of $gridpage);</code></pre></li>
+<li><p>the secondary column</p>
+<pre><code>/* this % value will give us our fat gutter and hold a med-rect ad */
+@include span(30% last); </code></pre></li>
+<li><p>see grid-play.html and _grid-play.scss</p></li>
+</ul></li>
+</ul></li>
+<li>picturefill: how many versions, and what sizes, of the image to use?
+<ul>
+<li><p>here's what we're working with now:</p>
+<pre><code>          default --&gt; 410px (image size)
+@min-width: 410px --&gt; 620px
+@min-width: 652px --&gt; 930px</code></pre></li>
+<li><p>this is working well so far</p></li>
+</ul></li>
+<li>don't forget sometimes we need to <code>grunt compile-jade</code> after switching branches
+<ul>
+<li>shortcut: <code>grcj</code></li>
+</ul></li>
+<li><p>TODO <del>more outside padding on medium screens</del>2014-23-12</p></li>
+<li>maybe we don't need a page wrapper?
+<ul>
+<li>but the nice thing is we can set a <code>position: relative;</code> on it</li>
+<li>maybe we can set it on .content</li>
+<li>so we're flying w/out a wrapper <em>Tue Dec 23 16:30:30 CST 2014</em></li>
+</ul></li>
+<li>so we break into our 2/3, 1/3 page grid on an article, right now, at 896px ($large-minor-start)
+<ul>
+<li>otherwise, we're 1 col on those smaller screens</li>
+</ul></li>
+<li><p><strong>TODAY</strong> Blueprints + girders -- focusing on structure, markup as clear and simple as possible</p></li>
+<li>so our <strong>story</strong> module has a 95% <code>container</code> to start
+<ul>
+<li>otherwise it would bleed to the edges, so that's how we're controlling our outside spacing</li>
+<li><em>w-w-w-wait:</em> our <strong>story</strong> should <code>span(8 of 12)</code>, no? not be a <code>container</code>?</li>
+</ul></li>
+<li><p>TODO we lost our figcaption --&gt; needs a <strong>container</strong> mixin</p></li>
 </ul>
 </body>
 </html>
