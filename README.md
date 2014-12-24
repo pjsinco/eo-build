@@ -118,7 +118,7 @@
 * Our Typekit [colophon](https://typekit.com/colophons/vdi5qvx)
 * PageSpeed on eo-build: 57/100 mobile Mon Dec 22 16:42:44 CST 2014
 
-### Tue Dec 23 06:18:02 CST 2014
+###Tue Dec 23 06:18:02 CST 2014
 * susy grids 
     * [example](http://sassmeister.com/gist/8381773), [zell](http://www.zell-weekeat.com/tag/susy/)
 * TODO ~~we need a fat gutter between our main column and secondary column on article page, without breaking our rhythm~~ Tue Dec 23 09:19:09 CST 2014
@@ -174,10 +174,27 @@
     * otherwise it would bleed to the edges, so that's how we're controlling our outside spacing
     * *w-w-w-wait:* our **story** should ```span(8 of 12)```, no? not be a ```container```?
 
-* TODO we lost our figcaption --> needs a **container** mixin
+* TODO ~~we lost our figcaption --> needs a **container** mixin~~Wed Dec 24 10:18:18 2014 CST 
 * TODO wrap our ads in a link
 
 * pagespeed: 57 mobile
 
 * so, on mediumish views, having the thin white column on the left is kinda jarring
 
+###Wed Dec 24 06:27:07 2014 CST
+* let's move **related** to the story footer in small, med screens?
+    * disruptive otherwise, esp. with ads running in
+* TODO ~~fix .story bpoint on $large-minor-start~~Wed Dec 24 11:06:22 2014 CST 
+    * set the max width
+        * max-width on .story should be 40.9824375em
+            * that's its width at desktop
+    * what if we set the max-width on .story as the same width of the leaderboard?
+        * so that'd be 45.5em
+
+* @890px width:
+    * .story is 728px wide --> same as leaderboard
+
+* let's let med-rects run into the story at some wider views
+    * OK! Wed Dec 24 11:05:58 2014 CST 
+
+* Wed Dec 24 11:06:37 2014 CST our breakpoints on article are finally looking decent
