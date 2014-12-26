@@ -231,5 +231,26 @@ if (ehs_width&lt;=767) {
 </ul></li>
 <li>Wed Dec 24 11:06:37 2014 CST our breakpoints on article are finally looking decent</li>
 </ul>
+<h3 id="fri-dec-26-084427-2014-cst">Fri Dec 26 08:44:27 2014 CST</h3>
+<ul>
+<li>TODO add <code>$screen</code> to all breakpoints</li>
+<li>TODO <code>span</code> in .site-branding--beta needs a class</li>
+<li>no <code>input[placeholder]</code> in ie9 and below
+<ul>
+<li><p>let's <a href="http://html5please.com/#placeholder">not worry about it</a></p>
+<blockquote>
+<p>A properly implemented form should have labels and any placeholders should be supplementary. As such, they are not required for successful completion of a form</p>
+</blockquote></li>
+</ul></li>
+<li>search placeholder is janky in ie10
+<ul>
+<li>it only appears, fleetingly, on the blur off transition</li>
+<li><p>here's a workaround--<a href="http://msdn.microsoft.com/en-us/library/ie/hh772745%28v=vs.85%29.aspx">hide it in ie</a>:</p>
+<pre><code>&amp;:-ms-input-placeholder {
+  color: transparent;
+}</code></pre></li>
+</ul></li>
+<li><strong>TODAY</strong> site nav stylin' up</li>
+</ul>
 </body>
 </html>

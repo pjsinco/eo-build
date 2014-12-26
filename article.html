@@ -39,12 +39,13 @@
             <li class="nav__item"><a href="#" class="nav__item--link">Profession</a></li>
             <li class="nav__item"><a href="#" class="nav__item--link">Policy</a></li>
             <li class="nav__item"><a href="#" class="nav__item--link">Lifestyle</a></li>
-            <li class="nav__item">
+            <li class="nav__item nav__item--last">
               <section class="site-search">
                 <form action="/search" id="search-form" class="site-search__form">
-                  <label id="search-label" for="q" class="site-search__label"></label>
-                  <button type="submit" class="site-search__button"><span class="icon-glass"></span></button>
-                  <input type="text" name="q" placeholder="Enter search terms" id="q" class="site-search__input">
+                  <label id="search-label" for="q" class="site-search__label">
+                    <input type="search" name="q" placeholder="Enter search terms" id="q" class="site-search__input">
+                  </label>
+                  <input type="submit" class="site-search__button--hide">
                 </form>
               </section>
             </li>
