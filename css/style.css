@@ -256,26 +256,30 @@ html {
 body {
   font-family: "proxima-nova", Arial, sans-serif;
   background-color: #fff; }
+  @media screen and (min-width: 64em) {
+    /* line 7, ../../../components/sass/base/_base.scss */
+    body {
+      border-top: 8px solid #ef3f23; } }
 
-/* line 12, ../../../components/sass/base/_base.scss */
+/* line 15, ../../../components/sass/base/_base.scss */
 a {
   text-decoration: none; }
-  /* line 15, ../../../components/sass/base/_base.scss */
+  /* line 18, ../../../components/sass/base/_base.scss */
   a:hover {
     text-decoration: underline; }
 
-/* line 20, ../../../components/sass/base/_base.scss */
+/* line 23, ../../../components/sass/base/_base.scss */
 p {
   margin-bottom: 1em;
   font-size: 1em;
   line-height: 1.4;
   color: #333; }
 
-/* line 27, ../../../components/sass/base/_base.scss */
+/* line 30, ../../../components/sass/base/_base.scss */
 ul {
   /*list-style: none;*/ }
 
-/* line 31, ../../../components/sass/base/_base.scss */
+/* line 34, ../../../components/sass/base/_base.scss */
 img {
   /*max-width: 100%;*/
   height: auto; }
@@ -489,9 +493,10 @@ img {
   @media screen and (min-width: 64em) {
     /* line 1, ../../../components/sass/modules/_site-branding.scss */
     .banner {
+      margin-top: 1em;
       box-shadow: none; } }
 
-/* line 11, ../../../components/sass/modules/_site-branding.scss */
+/* line 12, ../../../components/sass/modules/_site-branding.scss */
 .site-branding {
   height: 3em;
   /*background-color: $color-primary;*/
@@ -499,39 +504,39 @@ img {
   text-transform: uppercase;
   text-align: center; }
   @media screen and (min-width: 64em) {
-    /* line 11, ../../../components/sass/modules/_site-branding.scss */
+    /* line 12, ../../../components/sass/modules/_site-branding.scss */
     .site-branding {
       padding-bottom: 5em;
       border-bottom: 1px solid #ddd;
       text-align: left;
       background-color: #fff; } }
-  /* line 25, ../../../components/sass/modules/_site-branding.scss */
+  /* line 26, ../../../components/sass/modules/_site-branding.scss */
   .site-branding__link {
     /*color: #fff;*/
     color: #ef3f23; }
     @media screen and (min-width: 64em) {
-      /* line 25, ../../../components/sass/modules/_site-branding.scss */
+      /* line 26, ../../../components/sass/modules/_site-branding.scss */
       .site-branding__link {
         color: #ef3f23;
         font-size: 3.125em;
         letter-spacing: 0.2em; } }
-  /* line 35, ../../../components/sass/modules/_site-branding.scss */
+  /* line 36, ../../../components/sass/modules/_site-branding.scss */
   .site-branding--alpha {
     position: relative;
     top: 1em;
     letter-spacing: .25em; }
-  /* line 44, ../../../components/sass/modules/_site-branding.scss */
+  /* line 45, ../../../components/sass/modules/_site-branding.scss */
   .site-branding--beta {
     position: relative;
     top: -1em;
     display: none; }
     @media screen and (min-width: 64em) {
-      /* line 44, ../../../components/sass/modules/_site-branding.scss */
+      /* line 45, ../../../components/sass/modules/_site-branding.scss */
       .site-branding--beta {
         float: right;
         top: -1.3em;
         display: block; }
-        /* line 53, ../../../components/sass/modules/_site-branding.scss */
+        /* line 54, ../../../components/sass/modules/_site-branding.scss */
         .site-branding--beta span {
           font-size: 1.875em; } }
 
