@@ -269,17 +269,21 @@ a {
     text-decoration: underline; }
 
 /* line 23, ../../../components/sass/base/_base.scss */
+article {
+  overflow: hidden; }
+
+/* line 27, ../../../components/sass/base/_base.scss */
 p {
   margin-bottom: 1em;
   font-size: 1em;
   line-height: 1.4;
   color: #333; }
 
-/* line 30, ../../../components/sass/base/_base.scss */
+/* line 34, ../../../components/sass/base/_base.scss */
 ul {
   /*list-style: none;*/ }
 
-/* line 34, ../../../components/sass/base/_base.scss */
+/* line 38, ../../../components/sass/base/_base.scss */
 img {
   /*max-width: 100%;*/
   height: auto; }
@@ -404,6 +408,7 @@ img {
 /* line 1, ../../../components/sass/modules/_nav.scss */
 .nav {
   position: absolute;
+  z-index: 2;
   width: 100%;
   clear: both;
   -webkit-transition: all ease-out .3s;
@@ -416,35 +421,35 @@ img {
       position: static;
       -webkit-transition: none;
               transition: none; } }
-  /* line 15, ../../../components/sass/modules/_nav.scss */
+  /* line 16, ../../../components/sass/modules/_nav.scss */
   .js .nav {
     overflow: hidden;
     max-height: 0; }
     @media screen and (min-width: 64em) {
-      /* line 15, ../../../components/sass/modules/_nav.scss */
+      /* line 16, ../../../components/sass/modules/_nav.scss */
       .js .nav {
         overflow: visible;
         max-height: 100%; } }
-  /* line 24, ../../../components/sass/modules/_nav.scss */
+  /* line 25, ../../../components/sass/modules/_nav.scss */
   .nav.active {
     max-height: 21em; }
     @media screen and (min-width: 64em) {
-      /* line 24, ../../../components/sass/modules/_nav.scss */
+      /* line 25, ../../../components/sass/modules/_nav.scss */
       .nav.active {
         max-height: 100%; } }
-  /* line 31, ../../../components/sass/modules/_nav.scss */
+  /* line 32, ../../../components/sass/modules/_nav.scss */
   .nav__list {
     margin: 0;
     padding: 0;
     line-height: 2.5em;
     /*border-top: 1px solid lighten($font-color, 25%);*/ }
-  /* line 39, ../../../components/sass/modules/_nav.scss */
+  /* line 40, ../../../components/sass/modules/_nav.scss */
   .nav__item {
     display: block;
     border-bottom: 1px solid #ddd;
     text-align: center; }
     @media screen and (min-width: 64em) {
-      /* line 39, ../../../components/sass/modules/_nav.scss */
+      /* line 40, ../../../components/sass/modules/_nav.scss */
       .nav__item {
         margin-right: 1.230769231em;
         display: inline-block;
@@ -452,21 +457,21 @@ img {
         text-transform: uppercase;
         letter-spacing: .1em;
         font-size: 0.8125em; } }
-    /* line 52, ../../../components/sass/modules/_nav.scss */
+    /* line 53, ../../../components/sass/modules/_nav.scss */
     .nav__item--link {
       color: #333; }
       @media screen and (min-width: 64em) {
-        /* line 52, ../../../components/sass/modules/_nav.scss */
+        /* line 53, ../../../components/sass/modules/_nav.scss */
         .nav__item--link {
           color: #6b7574; } }
-    /* line 59, ../../../components/sass/modules/_nav.scss */
+    /* line 60, ../../../components/sass/modules/_nav.scss */
     .nav__item--last {
       float: right;
       margin-right: 0; }
-  /* line 65, ../../../components/sass/modules/_nav.scss */
+  /* line 66, ../../../components/sass/modules/_nav.scss */
   .nav__link {
     cursor: pointer; }
-    /* line 68, ../../../components/sass/modules/_nav.scss */
+    /* line 69, ../../../components/sass/modules/_nav.scss */
     .nav__link--toggle {
       position: absolute;
       top: .5em;
@@ -474,7 +479,7 @@ img {
       font-size: 1.5em;
       color: #fff; }
       @media screen and (min-width: 64em) {
-        /* line 68, ../../../components/sass/modules/_nav.scss */
+        /* line 69, ../../../components/sass/modules/_nav.scss */
         .nav__link--toggle {
           display: none; } }
 
@@ -494,9 +499,10 @@ img {
     /* line 1, ../../../components/sass/modules/_site-branding.scss */
     .banner {
       margin-top: 1em;
+      margin-bottom: 1.5em;
       box-shadow: none; } }
 
-/* line 12, ../../../components/sass/modules/_site-branding.scss */
+/* line 14, ../../../components/sass/modules/_site-branding.scss */
 .site-branding {
   height: 3em;
   /*background-color: $color-primary;*/
@@ -504,39 +510,39 @@ img {
   text-transform: uppercase;
   text-align: center; }
   @media screen and (min-width: 64em) {
-    /* line 12, ../../../components/sass/modules/_site-branding.scss */
+    /* line 14, ../../../components/sass/modules/_site-branding.scss */
     .site-branding {
       padding-bottom: 5em;
       border-bottom: 1px solid #ddd;
       text-align: left;
       background-color: #fff; } }
-  /* line 26, ../../../components/sass/modules/_site-branding.scss */
+  /* line 28, ../../../components/sass/modules/_site-branding.scss */
   .site-branding__link {
     /*color: #fff;*/
     color: #ef3f23; }
     @media screen and (min-width: 64em) {
-      /* line 26, ../../../components/sass/modules/_site-branding.scss */
+      /* line 28, ../../../components/sass/modules/_site-branding.scss */
       .site-branding__link {
         color: #ef3f23;
         font-size: 3.125em;
         letter-spacing: 0.2em; } }
-  /* line 36, ../../../components/sass/modules/_site-branding.scss */
+  /* line 38, ../../../components/sass/modules/_site-branding.scss */
   .site-branding--alpha {
     position: relative;
     top: 1em;
     letter-spacing: .25em; }
-  /* line 45, ../../../components/sass/modules/_site-branding.scss */
+  /* line 47, ../../../components/sass/modules/_site-branding.scss */
   .site-branding--beta {
     position: relative;
     top: -1em;
     display: none; }
     @media screen and (min-width: 64em) {
-      /* line 45, ../../../components/sass/modules/_site-branding.scss */
+      /* line 47, ../../../components/sass/modules/_site-branding.scss */
       .site-branding--beta {
         float: right;
         top: -1.3em;
         display: block; }
-        /* line 54, ../../../components/sass/modules/_site-branding.scss */
+        /* line 56, ../../../components/sass/modules/_site-branding.scss */
         .site-branding--beta span {
           font-size: 1.875em; } }
 
@@ -647,18 +653,18 @@ img {
   width: 94%;
   /*max-width: 40.9824375em;*/
   max-width: 728px; }
-  @media (min-width: 30em) {
+  @media screen and (min-width: 30em) {
     /* line 1, ../../../components/sass/modules/_story.scss */
     .story {
       /*@include container(90%);*/
       width: 90%; } }
-  @media (min-width: 48em) {
+  @media screen and (min-width: 48em) {
     /* line 1, ../../../components/sass/modules/_story.scss */
     .story {
       width: 100%;
       /*@include container(95%);*/
       /*@include span(8 of $gridpage);*/ } }
-  @media (min-width: 56em) {
+  @media screen and (min-width: 56em) {
     /* line 1, ../../../components/sass/modules/_story.scss */
     .story {
       width: 100%; } }
@@ -698,10 +704,12 @@ img {
 
 /* line 1, ../../../components/sass/modules/_content.scss */
 .content {
+  overflow: hidden;
+  *zoom: 1;
   /*padding-right: $outside-gutter-small;*/
   /*padding-left: $outside-gutter-small;*/
   /*margin-top: 1em;*/ }
-  @media (min-width: 56em) {
+  @media screen and (min-width: 56em) {
     /* line 1, ../../../components/sass/modules/_content.scss */
     .content {
       max-width: 62em;
@@ -721,14 +729,26 @@ img {
       padding-bottom: 0;
       /*padding-left: $outside-gutter-small;*/
       padding-left: 0; } }
+  /* line 27, ../../../components/sass/modules/_content.scss */
+  .content__primary {
+    position: relative; }
+    @media screen and (min-width: 64em) {
+      /* line 27, ../../../components/sass/modules/_content.scss */
+      .content__primary {
+        width: 66.10169%;
+        float: left;
+        margin-right: 1.69492%; }
+        /* line 32, ../../../components/sass/modules/_content.scss */
+        .content__primary:after {
+          content: '';
+          border-right: 1px solid #ddd;
+          display: block;
+          position: absolute;
+          top: 0;
+          right: -1.2em;
+          height: 100%; } }
   @media screen and (min-width: 64em) {
-    /* line 26, ../../../components/sass/modules/_content.scss */
-    .content__primary {
-      width: 66.10169%;
-      float: left;
-      margin-right: 1.69492%; } }
-  @media screen and (min-width: 64em) {
-    /* line 32, ../../../components/sass/modules/_content.scss */
+    /* line 45, ../../../components/sass/modules/_content.scss */
     .content__secondary {
       width: 30%;
       float: right;
@@ -761,12 +781,12 @@ img {
     margin-left: 3%;
     margin-right: 3%;
     max-width: 728px; }
-    @media (min-width: 30em) {
+    @media screen and (min-width: 30em) {
       /* line 31, ../../../components/sass/modules/_image.scss */
       .image__caption {
         margin-left: 5%;
         margin-right: 5%; } }
-    @media (min-width: 48em) {
+    @media screen and (min-width: 48em) {
       /* line 31, ../../../components/sass/modules/_image.scss */
       .image__caption {
         margin-left: auto;
@@ -822,10 +842,10 @@ img {
   overflow: hidden;
   *zoom: 1;
   display: none; }
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: 64em) {
     /* line 1, ../../../components/sass/modules/_pq.scss */
     .pq {
-      /*display: block;*/
+      display: block;
       float: left;
       position: relative;
       right: 14.70588%;
