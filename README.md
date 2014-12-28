@@ -220,3 +220,37 @@
 
 ###Sat Dec 27 15:24:16 2014 CST
 * pagespeed 57 mobile
+
+###Sun Dec 28 08:42:00 2014 CST
+* adelle semibold is font-weight: 600
+
+* ["Make sure list items don't have padding, but links do"](http://css-tricks.com/keep-margins-out-of-link-lists/)
+
+* [centering](http://css-tricks.com/centering-css-complete-guide/)
+
+* ~~TODO email icon is a little big~~ Sun Dec 28 16:38:59 2014 CST
+
+* TODO slight boost to byline, date on bigger screens
+
+* TODO remove bottom margin when top social goes vertical
+
+* so, we're styling story__body-text's p tag in _base and h2, drop cap in _story
+    * we should prolly keep in the same place
+
+* TODO email icon is *still* a little big
+
+* **TODAY** lotta story styling
+
+* should social icons be gray?
+
+* do we need adelle's font-weight: normal?
+    * would our resources be better used on adelle black for pull quotes?
+
+* how would line-height: 1.5 look on the body?
+
+* TODO we need some more bottom margin on figcaption in the body
+
+* our measure today, at biggest screen, is 72 chars
+    * 1.125em / 1.4
+    * at its widest, our measure tops out at 94 chars
+        * too wide?
