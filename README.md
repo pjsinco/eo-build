@@ -254,3 +254,17 @@
     * 1.125em / 1.4
     * at its widest, our measure tops out at 94 chars
         * too wide?
+
+###Mon Dec 29 05:14:25 2014 CST
+* related modules is a rover candidate
+    * run into story at larger screens
+    * put at bottom of smaller screens
+
+* [wp -- tags with commas inside them](http://blog.foobored.com/all/wordpress-tags-with-commas/)
+
+* TODO our arrow icons aren't showing up right in ie, ios safari
+
+* Our vertical rule in story nav's prev-next is a problem
+    * ideally, it should be as tall as the higher of the two columns
+
+* **TODAY** marking up, styling story nav
