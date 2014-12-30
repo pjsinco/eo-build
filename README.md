@@ -256,7 +256,7 @@
         * too wide?
 
 ###Mon Dec 29 05:14:25 2014 CST
-* related modules is a rover candidate
+* **related** module is a rover candidate
     * run into story at larger screens
     * put at bottom of smaller screens
 
@@ -264,7 +264,36 @@
 
 * TODO our arrow icons aren't showing up right in ie, ios safari
 
-* Our vertical rule in story nav's prev-next is a problem
+* TODO ~~Our vertical rule in **story-nav**'s **prev-next** is a problem~~ Tue Dec 30 12:42:25 2014 CST
     * ideally, it should be as tall as the higher of the two columns
 
-* **TODAY** marking up, styling story nav
+* **TODAY** marking up, styling **story-nav**
+
+###Tue Dec 30 08:34:33 2014 CST
+* do we need the word *topics*?
+
+* we're gonna redo some markup and style in **story-nav**
+
+* [how] can we track locations, schools (, specialties) mentioned in stories?
+    * then somewhere serve up all stories that mention OSU-COM or New Mexico or radiology?
+    * this would be extracurricular to tags
+
+* [wp debugging](http://nacin.com/2010/04/23/5-ways-to-debug-wordpress/)
+    * also: [this one](http://wptavern.com/query-monitor-a-remarkably-comprehensive-debugging-plugin-for-wordpress)
+
+* is 'newer' better than 'next' and 'older' better than 'previous'?
+    * seems like it
+        * 'next': next in what? you might wonder
+        * 'newer' sounds more enticing?
+
+* very cool how we got our vertical rule in **prev-next** to always line up with top of the words *OLDER, NEWER*
+    * ```height: calc(100% - 43px);```
+    * learned here: [A couple of use cases for calc()](http://css-tricks.com/a-couple-of-use-cases-for-calc/)
+
+* our author bio photo is 95px x 95px
+
+* **TODAY** gets bottom-of-story nav looking good across all screens
+
+* [the daily beast](http://www.thedailybeast.com/articles/2014/12/30/russia-s-rebel-in-chief-escapes-house-arrest.html)
+
+* our leaderboard ad, and smaller-screen versions, should prolly go above our banner, huh?
