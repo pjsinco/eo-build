@@ -248,7 +248,7 @@
 
 * how would line-height: 1.5 look on the body?
 
-* TODO we need some more bottom margin on figcaption in the body
+* TODO ~~we need some more bottom margin on figcaption in the body~~
 
 * our measure today, at biggest screen, is 72 chars
     * 1.125em / 1.4
@@ -305,15 +305,31 @@
 ###Wed Dec 31 09:23:40 2014 CST
 * [nice html tidier](http://www.dirtymarkup.com/)
 
-* TODO our **prev-next** needs more padding
+* TODO ~~our **prev-next** needs more padding~~
 
 * **TODAY** comments--markup, styling
 
 ###Thu Jan  1 06:21:13 2015 CST
 * dropcap isn't positioned correctly in firefox
 
-* logo fonts: ff enzo? beau sans?
+* logo 
+    * font possibles: ff enzo. beau sans. museo sans rounded. ff cocon web pro. anca. anisette std petite. parisine plus std sombre. adrianna.
+    * stitches, embroidered; subtle wrinkle ripple; sovba font.
+    * Dr.ing
 
 * **TODAY** markup, start to style widgets
 
 * **prev-next** is looking not good
+
+###Fri Jan  2 04:59:41 2015 CST
+* sticky stuff, hovers, etc.
+    * [http://codepen.io/philsinatra/pen/AfkuJ](http://codepen.io/philsinatra/pen/AfkuJ)
+    * [sticky header](http://codepen.io/iest/pen/mKpzA)
+    * [sticky on scroll up](http://codepen.io/tcmulder/pen/blzrc)
+    * [nav](http://codepen.io/TimRuby/pen/kLGic)
+    * [http://tympanus.net/Development/SelectInspiration/index8.html](http://tympanus.net/Development/SelectInspiration/index8.html)
+    * [hovers](http://tympanus.net/Development/HoverEffectIdeas/)
+
+* [Ms. Soueidan + svg](http://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques/)
+    
+* TODO ~~banner looks funny in ie9~~ Fri Jan  2 17:44:02 2015 CST
