@@ -234,16 +234,19 @@ th {
  * TYPOGRAPHY
  */
 /*
- * Breakpoint
- */
-/*
  * Layout
  */
 /*$article-max-width: 45.5em;*/
 /*
+ * Breakpoint
+ */
+/*
+ * Breakpoint syncs
+ */
+/*
  * Special
  */
-/* line 82, ../../../components/sass/utilities/_variables.scss */
+/* line 86, ../../../components/sass/utilities/_variables.scss */
 .story-footer__img, .comment__avatar {
   -webkit-clip-path: ellipse(50% 50% at 50% 50%);
           clip-path: ellipse(50% 50% at 50% 50%); }
@@ -616,7 +619,8 @@ figure {
         /*letter-spacing: 0.2em;*/ } }
     /* line 46, ../../../components/sass/modules/_site-branding.scss */
     .site-branding__link:after {
-      content: "Dr.ing";
+      /*content: "Dr.ing";*/
+      content: "Elit Ornare";
       line-height: .5;
       display: block;
       font-weight: bold;
@@ -624,29 +628,30 @@ figure {
       @media screen and (min-width: 36em) {
         /* line 46, ../../../components/sass/modules/_site-branding.scss */
         .site-branding__link:after {
-          content: "Doctoring";
+          /*content: "Doctoring";*/
+          content: "Elit Ornare";
           /*font-size: 2em;*/ } }
       @media screen and (min-width: 50.5625em) {
         /* line 46, ../../../components/sass/modules/_site-branding.scss */
         .site-branding__link:after {
           /*font-size: 4.5em;*/ } }
-  /* line 65, ../../../components/sass/modules/_site-branding.scss */
+  /* line 67, ../../../components/sass/modules/_site-branding.scss */
   .site-branding--alpha {
     position: relative;
     top: 1em;
     /*letter-spacing: .25em;*/ }
-  /* line 74, ../../../components/sass/modules/_site-branding.scss */
+  /* line 76, ../../../components/sass/modules/_site-branding.scss */
   .site-branding--beta {
     position: relative;
     top: -1em;
     display: none; }
     @media screen and (min-width: 50.5625em) {
-      /* line 74, ../../../components/sass/modules/_site-branding.scss */
+      /* line 76, ../../../components/sass/modules/_site-branding.scss */
       .site-branding--beta {
         float: right;
         top: -1.3em;
         display: block; }
-        /* line 83, ../../../components/sass/modules/_site-branding.scss */
+        /* line 85, ../../../components/sass/modules/_site-branding.scss */
         .site-branding--beta span {
           font-size: 1.875em; } }
 
@@ -1666,17 +1671,17 @@ figure {
     margin-right: 1em;
     float: left; }
 
-/* line 3, ../../../components/sass/modules/_super.scss */
+/* line 2, ../../../components/sass/modules/_super.scss */
 .super {
   position: relative;
   color: #333; }
   @media screen and (min-width: 48em) {
-    /* line 3, ../../../components/sass/modules/_super.scss */
+    /* line 2, ../../../components/sass/modules/_super.scss */
     .super {
-      padding-bottom: 2em;
+      padding-bottom: 1.5em;
       color: #fff; } }
   @media screen and (min-width: 64em) {
-    /* line 3, ../../../components/sass/modules/_super.scss */
+    /* line 2, ../../../components/sass/modules/_super.scss */
     .super {
       max-width: 62em;
       margin-left: auto;
@@ -1687,11 +1692,11 @@ figure {
         content: " ";
         display: block;
         clear: both; } }
-  /* line 19, ../../../components/sass/modules/_super.scss */
+  /* line 18, ../../../components/sass/modules/_super.scss */
   .super__image {
     /*@include span(9 of $gridpage);*/
     position: relative; }
-  /* line 24, ../../../components/sass/modules/_super.scss */
+  /* line 23, ../../../components/sass/modules/_super.scss */
   .super__body {
     position: relative;
     top: -1em;
@@ -1704,7 +1709,7 @@ figure {
     border-bottom: 1px solid #b3b3b3;
     border-left: 1px solid #b3b3b3; }
     @media screen and (min-width: 48em) {
-      /* line 24, ../../../components/sass/modules/_super.scss */
+      /* line 23, ../../../components/sass/modules/_super.scss */
       .super__body {
         position: absolute;
         top: inherit;
@@ -1720,10 +1725,10 @@ figure {
         padding-bottom: 1em;
         padding-left: 2em;
         border: 0;
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.6);
         /*border: 1px solid $white;*/
         color: inherit; } }
-  /* line 58, ../../../components/sass/modules/_super.scss */
+  /* line 57, ../../../components/sass/modules/_super.scss */
   .super__tag {
     position: absolute;
     display: none;
@@ -1736,10 +1741,10 @@ figure {
     background: rgba(0, 0, 0, 0.1);
     color: #f5f5f5; }
     @media screen and (min-width: 48em) {
-      /* line 58, ../../../components/sass/modules/_super.scss */
+      /* line 57, ../../../components/sass/modules/_super.scss */
       .super__tag {
         display: block; } }
-  /* line 75, ../../../components/sass/modules/_super.scss */
+  /* line 74, ../../../components/sass/modules/_super.scss */
   .super__kicker {
     display: inline-block;
     margin-right: .625em;
@@ -1748,16 +1753,16 @@ figure {
     text-transform: uppercase;
     font-size: .875em;
     color: #ef3f23; }
-  /* line 85, ../../../components/sass/modules/_super.scss */
+  /* line 84, ../../../components/sass/modules/_super.scss */
   .super__date {
     font-size: .875em;
     text-transform: uppercase;
     color: #6b7574; }
     @media screen and (min-width: 48em) {
-      /* line 85, ../../../components/sass/modules/_super.scss */
+      /* line 84, ../../../components/sass/modules/_super.scss */
       .super__date {
         color: #b3b3b3; } }
-  /* line 94, ../../../components/sass/modules/_super.scss */
+  /* line 93, ../../../components/sass/modules/_super.scss */
   .super__head {
     margin-top: .25em;
     margin-bottom: .125em;
@@ -1766,13 +1771,13 @@ figure {
     line-height: 1.2;
     color: inherit; }
     @media screen and (min-width: 48em) {
-      /* line 94, ../../../components/sass/modules/_super.scss */
+      /* line 93, ../../../components/sass/modules/_super.scss */
       .super__head {
         margin-top: .25em;
         margin-bottom: 0;
         /*line-height: 1.2;*/
         font-size: 2em; } }
-  /* line 110, ../../../components/sass/modules/_super.scss */
+  /* line 109, ../../../components/sass/modules/_super.scss */
   .super__body-text {
     font-size: 1em;
     line-height: 1.3;
@@ -1781,7 +1786,7 @@ figure {
 @media screen and (min-width: 50.5625em) {
   /* line 1, ../../../components/sass/modules/_featured.scss */
   .featured {
-    margin-top: 2em; } }
+    margin-top: 1em; } }
 /* line 7, ../../../components/sass/modules/_featured.scss */
 .featured__feature {
   position: relative;
@@ -1792,86 +1797,114 @@ figure {
   overflow: hidden;
   *zoom: 1;
   width: 94%; }
-  @media screen and (min-width: 56em) {
+  @media screen and (min-width: 64em) {
     /* line 13, ../../../components/sass/modules/_featured.scss */
     .featured__primary {
       width: 66.10169%;
       float: left;
       margin-right: 1.69492%; } }
-@media screen and (min-width: 56em) {
-  /* line 23, ../../../components/sass/modules/_featured.scss */
-  .featured__secondary {
-    /*@include span(30% last of $gridpage);*/
-    width: 32.20339%;
-    float: right;
-    margin-right: 0; } }
+/* line 23, ../../../components/sass/modules/_featured.scss */
+.featured__secondary {
+  overflow: hidden;
+  *zoom: 1; }
+  @media screen and (min-width: 64em) {
+    /* line 23, ../../../components/sass/modules/_featured.scss */
+    .featured__secondary {
+      /*@include span(30% last of $gridpage);*/
+      width: 32.20339%;
+      float: right;
+      margin-right: 0; } }
 /* line 31, ../../../components/sass/modules/_featured.scss */
 .featured__image {
-  position: absolute;
-  top: 1.6875em;
+  position: relative;
+  /*top: 1.6875em;*/
+  top: .1875em;
+  right: 0;
+  margin-left: .5em;
+  float: right;
   max-width: 6.25em;
-  display: inline-block;
-  float: left; }
+  display: inline-block; }
+  @media screen and (min-width: 36em) {
+    /* line 31, ../../../components/sass/modules/_featured.scss */
+    .featured__image {
+      /*position: static;*/
+      margin-left: 0;
+      margin-right: .5em;
+      float: left;
+      /*top: 1.6875em;*/ } }
   @media screen and (min-width: 48em) {
     /* line 31, ../../../components/sass/modules/_featured.scss */
     .featured__image {
       /*width: 35%;*/
       /*float: left;*/
       /*@include span(35%);*/
-      width: 35.89744%;
-      float: left;
-      margin-right: 2.5641%;
+      /*@include span(3 of 8);*/
       max-width: inherit;
-      position: static; } }
+      /*position: static;*/ } }
 @media screen and (min-width: 48em) {
-  /* line 48, ../../../components/sass/modules/_featured.scss */
+  /* line 61, ../../../components/sass/modules/_featured.scss */
   .featured__body {
     /*width: 65%;*/
     /*@include span(65% last);*/
-    width: 61.53846%;
-    float: right;
-    margin-right: 0; } }
-/* line 57, ../../../components/sass/modules/_featured.scss */
+    /*@include span(5 last of 8);*/
+    margin-left: 15.890625em; } }
+/* line 72, ../../../components/sass/modules/_featured.scss */
 .featured__head {
   margin-top: 0;
   margin-bottom: .25em;
-  margin-left: 6.1em;
+  /*margin-left: 6.1em;*/
+  margin-left: 0;
   font-size: 1.1em;
   line-height: 1.4;
   font-weight: 100;
   font-family: "adelle", Georgia, serif; }
-  @media screen and (min-width: 48em) {
-    /* line 57, ../../../components/sass/modules/_featured.scss */
+  @media screen and (min-width: 36em) {
+    /* line 72, ../../../components/sass/modules/_featured.scss */
     .featured__head {
-      margin-left: 0;
+      /*margin-left: 0;*/ } }
+  @media screen and (min-width: 48em) {
+    /* line 72, ../../../components/sass/modules/_featured.scss */
+    .featured__head {
       font-size: 1.25em;
       line-height: 1.5; } }
-/* line 74, ../../../components/sass/modules/_featured.scss */
+/* line 94, ../../../components/sass/modules/_featured.scss */
 .featured__link {
   color: inherit; }
-/* line 78, ../../../components/sass/modules/_featured.scss */
+/* line 98, ../../../components/sass/modules/_featured.scss */
 .featured__body-text {
-  margin-left: 6.75em;
+  /*margin-left: 6.75em;*/
+  margin-left: 0;
   font-size: 1em;
   line-height: 1.3; }
   @media screen and (min-width: 48em) {
-    /* line 78, ../../../components/sass/modules/_featured.scss */
+    /* line 98, ../../../components/sass/modules/_featured.scss */
     .featured__body-text {
       margin-left: 0;
       font-size: 1.125em;
       line-height: 1.4;
       font-weight: 400; } }
-/* line 90, ../../../components/sass/modules/_featured.scss */
+/* line 116, ../../../components/sass/modules/_featured.scss */
 .featured__date {
+  display: block;
   font-size: .875em;
   color: #6b7574; }
-/* line 95, ../../../components/sass/modules/_featured.scss */
+  @media screen and (min-width: 36em) {
+    /* line 116, ../../../components/sass/modules/_featured.scss */
+    .featured__date {
+      display: inline-block; } }
+/* line 126, ../../../components/sass/modules/_featured.scss */
 .featured__kicker {
-  display: inline-block;
+  display: block;
   margin-top: 0;
   margin-right: .25em;
   margin-bottom: .5em;
   letter-spacing: .1em;
   font-size: .875em;
   text-transform: uppercase;
+  line-height: 1.3;
   color: #ef3f23; }
+  @media screen and (min-width: 36em) {
+    /* line 126, ../../../components/sass/modules/_featured.scss */
+    .featured__kicker {
+      display: inline-block;
+      line-height: 1; } }
