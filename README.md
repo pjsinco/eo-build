@@ -341,3 +341,11 @@
     * min height is about 478px on 992px wide
 
 * **TODAY** front-page super, featured
+
+###Mon Jan  5 08:53:30 2015 CST
+*  **TODAY** refining front-page featured stories
+
+###Tue Jan  6 04:59:39 2015 CST
+* [equal-sized columns](http://webdesign.tutsplus.com/tutorials/quick-tip-solving-the-equal-height-column-conundrum--cms-20403)
+
+* **TODAY** styling more-stories on front page
