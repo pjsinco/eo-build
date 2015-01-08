@@ -1777,13 +1777,15 @@ figure {
   position: relative;
   margin-left: -2em;
   padding-left: 2em;
+  padding-bottom: 2em;
   line-height: 1.4;
   text-transform: uppercase;
   letter-spacing: .05em;
-  font-weight: 600;
+  text-align: center;
+  font-weight: 100;
   color: #6b7574; }
 
-/* line 41, ../../../components/sass/modules/_widget.scss */
+/* line 43, ../../../components/sass/modules/_widget.scss */
 .widget {
   overflow: hidden;
   *zoom: 1;
@@ -1791,27 +1793,27 @@ figure {
   margin-left: -1.25em;
   padding-left: 1.25em; }
   @media screen and (min-width: 48em) and (max-width: 64em) {
-    /* line 41, ../../../components/sass/modules/_widget.scss */
+    /* line 43, ../../../components/sass/modules/_widget.scss */
     .widget {
       width: 48.71795%;
       float: left;
       margin-right: 2.5641%; }
-      /* line 50, ../../../components/sass/modules/_widget.scss */
+      /* line 52, ../../../components/sass/modules/_widget.scss */
       .widget:last-child {
         width: 48.71795%;
         float: right;
         margin-right: 0; } }
-  /* line 55, ../../../components/sass/modules/_widget.scss */
+  /* line 57, ../../../components/sass/modules/_widget.scss */
   .widget__list {
     padding-left: 0; }
-  /* line 60, ../../../components/sass/modules/_widget.scss */
+  /* line 62, ../../../components/sass/modules/_widget.scss */
   .widget__list--counter {
     counter-reset: list-counter; }
-  /* line 65, ../../../components/sass/modules/_widget.scss */
+  /* line 67, ../../../components/sass/modules/_widget.scss */
   .widget__list-item {
     overflow: hidden;
     *zoom: 1; }
-  /* line 73, ../../../components/sass/modules/_widget.scss */
+  /* line 75, ../../../components/sass/modules/_widget.scss */
   .widget__list-item--counter:before {
     position: absolute;
     left: -.75em;
@@ -1819,26 +1821,40 @@ figure {
     counter-increment: list-counter;
     font-size: 3em;
     color: #6b7574; }
-  /* line 88, ../../../components/sass/modules/_widget.scss */
+  /* line 90, ../../../components/sass/modules/_widget.scss */
   .widget__title {
-    padding-bottom: 1em;
     font-size: 1em; }
-    /* line 97, ../../../components/sass/modules/_widget.scss */
+    @media screen and (min-width: 48em) {
+      /* line 90, ../../../components/sass/modules/_widget.scss */
+      .widget__title {
+        padding-bottom: 1em;
+        font-weight: 600;
+        text-align: left; } }
+    /* line 104, ../../../components/sass/modules/_widget.scss */
     .widget__title--section {
-      padding-bottom: .25em;
       font-size: 1.125em; }
-    /* line 107, ../../../components/sass/modules/_widget.scss */
+      @media screen and (min-width: 48em) {
+        /* line 104, ../../../components/sass/modules/_widget.scss */
+        .widget__title--section {
+          padding-bottom: .25em;
+          text-align: left;
+          font-weight: 600; } }
+    /* line 119, ../../../components/sass/modules/_widget.scss */
     .widget__title--muted {
-      display: inline-block;
+      display: none;
       float: right;
       font-weight: 400;
       font-size: .875em;
       letter-spacing: 0;
       color: #b3b3b3; }
-      /* line 115, ../../../components/sass/modules/_widget.scss */
+      /* line 127, ../../../components/sass/modules/_widget.scss */
       .widget__title--muted > span {
         color: #b3b3b3; }
-  /* line 121, ../../../components/sass/modules/_widget.scss */
+      @media screen and (min-width: 48em) {
+        /* line 119, ../../../components/sass/modules/_widget.scss */
+        .widget__title--muted {
+          display: inline-block; } }
+  /* line 137, ../../../components/sass/modules/_widget.scss */
   .widget__feature {
     margin-right: 1em;
     float: left; }
