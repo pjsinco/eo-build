@@ -521,82 +521,97 @@ figure {
 /* line 29, ../../../components/sass/modules/_icons.scss */
 .icon-menu:before {
   content: "\e60f";
-  color: #6b7574; }
+  /*color: $gray;*/
+  color: inherit; }
 
-/* line 33, ../../../components/sass/modules/_icons.scss */
+/* line 34, ../../../components/sass/modules/_icons.scss */
 .icon-aoa-solid:before {
   content: "\e600";
-  color: #b3b3b3; }
+  /*color: $mediumgray;*/
+  color: inherit; }
 
-/* line 37, ../../../components/sass/modules/_icons.scss */
+/* line 39, ../../../components/sass/modules/_icons.scss */
 .icon-arrow-down:before {
   content: "\e601";
-  color: #333; }
+  /*color: $verydark;*/
+  color: inherit; }
 
-/* line 41, ../../../components/sass/modules/_icons.scss */
+/* line 44, ../../../components/sass/modules/_icons.scss */
 .icon-arrow-left:before {
   content: "\e602";
-  color: #333; }
+  /*color: $verydark;*/
+  color: inherit; }
 
-/* line 45, ../../../components/sass/modules/_icons.scss */
+/* line 49, ../../../components/sass/modules/_icons.scss */
 .icon-arrow-right:before {
   content: "\e603";
   color: inherit; }
 
-/* line 49, ../../../components/sass/modules/_icons.scss */
+/* line 53, ../../../components/sass/modules/_icons.scss */
 .icon-arrow-up:before {
   content: "\e604";
-  color: #333; }
+  /*color: $verydark;*/
+  color: inherit; }
 
-/* line 53, ../../../components/sass/modules/_icons.scss */
+/* line 58, ../../../components/sass/modules/_icons.scss */
 .icon-comment:before {
   content: "\e605";
-  color: #6b7574; }
+  /*color: $gray;*/
+  color: inherit; }
 
-/* line 57, ../../../components/sass/modules/_icons.scss */
+/* line 63, ../../../components/sass/modules/_icons.scss */
 .icon-email:before {
   content: "\e606";
-  color: #b3b3b3; }
+  /*color: $mediumgray;*/
+  color: inherit; }
 
-/* line 61, ../../../components/sass/modules/_icons.scss */
+/* line 68, ../../../components/sass/modules/_icons.scss */
 .icon-facebook:before {
   content: "\e607";
-  color: #3b5999; }
-
-/* line 65, ../../../components/sass/modules/_icons.scss */
-.icon-glass:before {
-  content: "\e608";
-  color: #333; }
-
-/* line 69, ../../../components/sass/modules/_icons.scss */
-.icon-gplus:before {
-  content: "\e609";
-  color: #dc4a38; }
+  /*color: $facebook;*/
+  color: inherit; }
 
 /* line 73, ../../../components/sass/modules/_icons.scss */
+.icon-glass:before {
+  content: "\e608";
+  /*color: $verydark;*/
+  color: inherit; }
+
+/* line 78, ../../../components/sass/modules/_icons.scss */
+.icon-gplus:before {
+  content: "\e609";
+  /*color: $gplus;*/
+  color: inherit; }
+
+/* line 83, ../../../components/sass/modules/_icons.scss */
 .icon-link:before {
   content: "\e60a";
-  color: #333; }
+  /*color: $verydark;*/
+  color: inherit; }
 
-/* line 77, ../../../components/sass/modules/_icons.scss */
+/* line 88, ../../../components/sass/modules/_icons.scss */
 .icon-linkedin:before {
   content: "\e60b";
-  color: #007bb5; }
+  /*color: $linkedin;*/
+  color: inherit; }
 
-/* line 81, ../../../components/sass/modules/_icons.scss */
+/* line 93, ../../../components/sass/modules/_icons.scss */
 .icon-pinterest:before {
   content: "\e60c";
-  color: #cb2027; }
+  /*color: $pinterest;*/
+  color: inherit; }
 
-/* line 85, ../../../components/sass/modules/_icons.scss */
+/* line 98, ../../../components/sass/modules/_icons.scss */
 .icon-twitter:before {
   content: "\e60d";
-  color: #5fa9dd; }
+  /*color: $twitter;*/
+  color: inherit; }
 
-/* line 89, ../../../components/sass/modules/_icons.scss */
+/* line 103, ../../../components/sass/modules/_icons.scss */
 .icon-youtube:before {
   content: "\e60e";
-  color: #e12d27; }
+  /*color: $youtube;*/
+  color: inherit; }
 
 /* line 1, ../../../components/sass/modules/_nav.scss */
 .nav {
@@ -670,7 +685,7 @@ figure {
       top: .5em;
       left: 1em;
       font-size: 1.5em;
-      color: #fff; }
+      color: #6b7574; }
       @media screen and (min-width: 50.5625em) {
         /* line 69, ../../../components/sass/modules/_nav.scss */
         .nav__link--toggle {
@@ -776,13 +791,16 @@ figure {
     position: relative;
     top: -1em;
     display: none; }
+    /* line 81, ../../../components/sass/modules/_site-branding.scss */
+    .site-branding--beta > a {
+      color: #b3b3b3; }
     @media screen and (min-width: 50.5625em) {
       /* line 76, ../../../components/sass/modules/_site-branding.scss */
       .site-branding--beta {
         float: right;
         top: -1.3em;
         display: block; }
-        /* line 85, ../../../components/sass/modules/_site-branding.scss */
+        /* line 90, ../../../components/sass/modules/_site-branding.scss */
         .site-branding--beta span {
           font-size: 1.875em; } }
 
@@ -1140,6 +1158,9 @@ figure {
   /* line 85, ../../../components/sass/modules/_social.scss */
   .social [class*='icon-youtube'] {
     color: #e12d27; }
+  /* line 89, ../../../components/sass/modules/_social.scss */
+  .social [class*='icon-email'] {
+    color: #b3b3b3; }
 
 /* line 1, ../../../components/sass/modules/_pq.scss */
 .pq {
@@ -1383,8 +1404,9 @@ figure {
   text-align: right; }
   /* line 8, ../../../components/sass/modules/_comment-link.scss */
   .comment-link__link {
-    font-size: 2.5em; }
-  /* line 13, ../../../components/sass/modules/_comment-link.scss */
+    font-size: 2.5em;
+    color: #6b7574; }
+  /* line 14, ../../../components/sass/modules/_comment-link.scss */
   .comment-link__body {
     /*position: absolute;*/
     position: relative;
@@ -1849,14 +1871,18 @@ figure {
     font-size: .875em;
     letter-spacing: 0;
     color: #b3b3b3; }
-    /* line 134, ../../../components/sass/modules/_widget.scss */
+    /* line 135, ../../../components/sass/modules/_widget.scss */
+    .widget__title--muted > span:not([class*='icon-arrow']) {
+      margin-left: .5em;
+      font-size: 1.5em; }
+    /* line 140, ../../../components/sass/modules/_widget.scss */
     .widget__title--muted > span {
       color: #b3b3b3; }
     @media screen and (min-width: 48em) {
       /* line 126, ../../../components/sass/modules/_widget.scss */
       .widget__title--muted {
         display: inline-block; } }
-  /* line 144, ../../../components/sass/modules/_widget.scss */
+  /* line 150, ../../../components/sass/modules/_widget.scss */
   .widget__feature {
     margin-right: 1em;
     float: left; }
@@ -2351,3 +2377,32 @@ figure {
     .f-row {
       margin-top: 0;
       width: inherit; } }
+
+/* line 1, ../../../components/sass/modules/_social-pick.scss */
+.social-pick {
+  overflow: hidden;
+  *zoom: 1;
+  width: 94%;
+  margin: 0 auto 2em auto; }
+  /* line 7, ../../../components/sass/modules/_social-pick.scss */
+  .social-pick__meta {
+    overflow: hidden;
+    *zoom: 1; }
+  /* line 11, ../../../components/sass/modules/_social-pick.scss */
+  .social-pick__link {
+    color: #ef3f23; }
+  /* line 15, ../../../components/sass/modules/_social-pick.scss */
+  .social-pick__date {
+    float: right;
+    color: #6b7574; }
+  /* line 20, ../../../components/sass/modules/_social-pick.scss */
+  .social-pick__author {
+    float: left;
+    font-size: 1.25em; }
+  /* line 25, ../../../components/sass/modules/_social-pick.scss */
+  .social-pick__body {
+    margin-top: .5em; }
+  /* line 29, ../../../components/sass/modules/_social-pick.scss */
+  .social-pick__body-text {
+    line-height: 1.3;
+    font-size: 1em; }
