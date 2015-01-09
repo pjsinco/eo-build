@@ -343,7 +343,7 @@
 * **TODAY** front-page super, featured
 
 ###Mon Jan  5 08:53:30 2015 CST
-*  **TODAY** refining front-page featured stories
+* **TODAY** refining front-page featured stories
 
 ###Tue Jan  6 04:59:39 2015 CST
 * [equal-sized columns](http://webdesign.tutsplus.com/tutorials/quick-tip-solving-the-equal-height-column-conundrum--cms-20403)
@@ -356,4 +356,30 @@
 ###Thu Jan  8 05:57:15 2015 CST
 * TODO what if we use color: inherit on all our icons? let's try it
 
-* [hover effect for pseudo elements](http://stackoverflow.com/questions/8874326/how-to-make-a-hover-effect-for-pseudo-elements)
+* [hover on pseudo elements](http://stackoverflow.com/questions/8874326/how-to-make-a-hover-effect-for-pseudo-elements)
+
+###Fri Jan  9 04:42:06 2015 CST
+* TODO we need vert and maybe horiz rules on our fourths row on medium screens
+
+* secondary colors?
+    * something light, cool, subtle
+        * slategrey, paleturqoise, mintcream, lightyellow, lightsteelblue, lightslategrey, lightskyblue, lightcyan, ivory, **aliceblue**, azure, deepskyblue, ghostwhite, honeydew
+    * but do we really need a second color?
+
+* try async for ehs-head-tag.js
+
+* TODO comments need more padding
+
+* article: mobile pagespeed
+    * before adding ehs tags: 57
+    * after adding ehs tags: 41 (**!!!**)
+        * Ilya's response to whether we can get do anything about that perf hit
+            ```
+            Unfortunately not at the moment, but we’re working on the 
+            async version of the ad tag that should not affect the page 
+            load. I don’t have an ETA right now, but we’ll definitely 
+            distribute it when ready.
+            ```
+
+
+* **TODAY** starting to style curated social; verified ehs ads will rove;
