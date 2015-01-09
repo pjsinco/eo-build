@@ -879,12 +879,10 @@ figure {
     margin: 0 auto; }
   /* line 35, ../../../components/sass/modules/_ad.scss */
   .ad--wide-shallow {
+    display: inline-block;
+    text-align: center;
     width: 100%; }
-    @media screen and (min-width: 30em) {
-      /* line 35, ../../../components/sass/modules/_ad.scss */
-      .ad--wide-shallow {
-        /*width: 728px;*/ } }
-  /* line 44, ../../../components/sass/modules/_ad.scss */
+  /* line 42, ../../../components/sass/modules/_ad.scss */
   .ad:before {
     color: #6b7574;
     content: "Advertisement";
@@ -899,7 +897,7 @@ figure {
     font-size: .5em;
     letter-spacing: .25em;
     text-align: center; }
-  /* line 60, ../../../components/sass/modules/_ad.scss */
+  /* line 58, ../../../components/sass/modules/_ad.scss */
   .ad:after {
     padding-bottom: .5em;
     margin-top: .5em;
