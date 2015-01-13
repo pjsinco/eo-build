@@ -403,3 +403,28 @@
 * [AHRF data](http://ahrf.hrsa.gov/categories.htm)
 
 * Do we need the rule below the super on the front page?
+
+###Mon Jan 12 13:53:00 2015 CST
+* twitter-pick: @mplified, Heartbeat, Pulse, BPM
+
+* [oocss + grids](https://github.com/stubbornella/oocss/wiki/Grids)
+
+* [margins in one direction only](http://csswizardry.com/2012/06/single-direction-margin-declarations/)
+    > This means always use margin-bottom to push items down the page, 
+    > and margin-left to push them across the page.
+
+* [styles for hr](http://css-tricks.com/examples/hrs/)
+
+* **TODAY** refactoring front-page css
+
+* use susy's [gallery mixin](http://susydocs.oddbird.net/en/latest/toolkit/?highlight=last#gallery) for displaying .size-1-of-4 (.size-1-of-3?) on medium screens!
+    * no need for ```&--last```
+
+* maybe use susy's [bleed mixin](http://susy.readthedocs.org/en/latest/toolkit/#bleed) for bleeding left and right?
+
+###Tue Jan 13 05:36:47 2015 CST
+* [save all windows in vim](http://stackoverflow.com/questions/4429368/save-all-windows-tabs-in-gvim)
+
+* [honeypot](http://solutionfactor.net/blog/2014/02/01/honeypot-technique-fast-easy-spam-prevention/)
+
+* **TODAY** finished refactoring front-page
