@@ -166,7 +166,7 @@
       </div>
       <div class="row no-m-b">
         <div class="size-1-of-1">
-          <div class="section-title">Pulse <span class="section-title--muted">Follow us <a href="#"><span class="icon-facebook"></span></a> <a href="#"><span class="icon-twitter"></span></a> <a href="#"><span class="icon-linkedin"></span></a> <a href="#"><span class="icon-pinterest"></span></a></span>
+          <div class="section-title">Purus Dolor <span class="section-title--muted">Follow us <a href="#"><span class="icon-facebook"></span></a> <a href="#"><span class="icon-twitter"></span></a> <a href="#"><span class="icon-linkedin"></span></a> <a href="#"><span class="icon-pinterest"></span></a></span>
           </div>
         </div>
       </div>
@@ -180,33 +180,29 @@
           </div>
         </div>
       </div>
-      <aside data-set="rover-peggy-parent" class="ad ad__med-rect--front rover-peggy-parent-f-a">
-        <div class="rover-peggy"><a href="#"><img src="img/medium-rect-0.gif" alt="medium-rectangle"></a>
-        </div>
-      </aside>
       <div class="row">
         <div class="size-1-of-1">
           <div class="section-title">Spotlight</div>
         </div>
       </div>
       <div class="row">
-        <div class="unit size-2-of-3">
+        <div class="unit size-1-of-1">
           <div id="spotlight" class="spotlight">
-            <iframe width="655" height="400" src="//www.youtube.com/embed/SbTcdzb1HR0" frameborder="0" allowfullscreen></iframe>
+            <div class="spotlight__feature-wrapper">
+              <iframe width="655" height="400" src="//www.youtube.com/embed/SbTcdzb1HR0?color=white&amp;autohide=1&amp;modestbranding=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="spotlight__body">
+              <h5 class="spotlight__kicker">Egestas Purus</h5>
+              <h2 class="spotlight__head">Oras justo odio, dapibus ac facilisis in, egestas eget quam.</h2>
+              <p class="spotlight__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="size-1-of-1 cta">
-          <h3 class="cta__head">Subscribe to Elit Ornare </h3>
-          <p class="cta__body-text">Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
-          <form action="#" method="post" novalidate class="frm cta__form">
-            <input name="email-signup-robotic" type="text" size="30" id="email-signup-robotic" class="frm__input--robo">
-            <input name="email-signup" type="email" size="30" placeholder="Email address" id="email-signup" class="cta__input">
-            <input type="submit" value="Subscribe" class="btn cta__btn">
-          </form>
+      <aside data-set="rover-peggy-parent" class="ad ad__med-rect--front rover-peggy-parent-f-a">
+        <div class="rover-peggy"><a href="#"><img src="img/medium-rect-0.gif" alt="medium-rectangle"></a>
         </div>
-      </div>
+      </aside>
       <div class="row">
         <div class="size-1-of-1">
           <div class="section-title">Also on Osteopathic.org</div>
@@ -244,6 +240,17 @@
           </article>
         </div>
       </div>
+      <div class="row">
+        <div class="size-1-of-1 cta">
+          <h3 class="cta__head">Subscribe to Elit Ornare </h3>
+          <p class="cta__body-text">Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+          <form action="#" method="post" novalidate class="frm cta__form">
+            <input name="email-signup-robotic" type="text" size="30" id="email-signup-robotic" class="frm__input--robo">
+            <input name="email-signup" type="email" size="30" placeholder="Email address" id="email-signup" class="cta__input">
+            <input type="submit" value="Subscribe" class="btn cta__btn">
+          </form>
+        </div>
+      </div>
       <aside data-set="rover-peggy-parent" class="ad ad__med-rect--front rover-peggy-parent-f-a"></aside>
     </div>
     <footer></footer>
@@ -259,7 +266,7 @@
     <script>
       /* fitvids */
       $(document).ready(function() {
-        $('#spotlight').fitVids();
+        $('.spotlight__feature-wrapper').fitVids();
       });
       
     </script>
