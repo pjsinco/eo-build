@@ -491,5 +491,103 @@ distribute it when ready.</code></pre></li>
 <li><a href="http://www.git-tower.com/learn/">see here</a></li>
 </ul></li>
 </ul>
+<h3 id="sat-jan-17-101138-2015-cst">Sat Jan 17 10:11:38 2015 CST</h3>
+<ul>
+<li><p><a href="http://codex.wordpress.org/Theme_Unit_Test">wp theme unit test</a></p></li>
+<li><p><a href="http://culttt.com/2013/04/08/how-to-deploy-wordpress-themes-with-git/">deploying wp w/ git</a></p></li>
+<li><p><a href="http://robandlauren.com/2014/02/05/live-reload-grunt-wordpress/">livereload + grunt + wp</a></p></li>
+<li><p><a href="http://pressing-matters.io/the-definitive-guide-to-adding-javascript-css-to-wordpress/">The Definitive Guide to adding Javascript &amp; CSS to WordPress</a></p></li>
+<li>steps for tooling + wp--let's see how they work <code>(so far so good)</code>
+<ol style="list-style-type: decimal">
+<li><p>steps for grunt, compass, susy in wp</p>
+<pre><code>sudo npm init
+sudo npm install grunt --save-dev
+sudo npm install grunt-contrib-compass --save-dev
+sudo gem install susy
+sudo gem install compass-normalize</code></pre></li>
+<li><p>here's my config.rb, in theme dir</p>
+<pre><code>require &#39;susy&#39;
+require &#39;compass-normalize&#39;
+http_path = &#39;/&#39;
+css_dir = &#39;.&#39;
+#fonts_dir = &#39;builds/dev/fonts&#39;
+sass_dir = &#39;sass&#39;
+javascripts_dir = &#39;js&#39;
+output_style = :nested
+#images_dir = &#39;builds/dev/img&#39;
+relative_assets = true
+line_comments = true</code></pre></li>
+<li><p>enqueue livereload in functions.php</p>
+<pre><code>wp_enqueue_script(&#39;eo-play-livereload&#39;, &#39;http://localhost:35729/livereload.js&#39;, array(), &#39;&#39;, true);</code></pre></li>
+<li><p>set up Gruntfile.js to livereload</p>
+<pre><code>module.exports = function(grunt) {
+
+  grunt.loadNpmTasks(&quot;grunt-contrib-watch&quot;);
+  grunt.loadNpmTasks(&quot;grunt-contrib-compass&quot;);
+
+  grunt.initConfig({
+
+    compass: {
+      dev: {
+        options: {
+          config: &#39;config.rb&#39;
+        }
+      }
+    },
+
+
+    watch: {
+      options: {
+        livereload: true
+      },
+
+      sass: {
+        files: [&#39;sass/**/*.scss&#39;],
+        tasks: [&#39;compass:dev&#39;] 
+      },
+
+      php: {
+        files: [&#39;**/*.php&#39;],
+        options: {
+          livereload: 35729
+        }
+      },
+
+    } // watch
+
+  }); // initConfig
+
+  grunt.registerTask(&#39;compile-sass&#39;, [&#39;compass:dev&#39;]);
+  grunt.registerTask(&#39;default&#39;, [&#39;watch&#39;]);
+
+}; // exports</code></pre></li>
+</ol></li>
+</ul>
+<h3 id="sun-jan-18-091246-2015-cst">Sun Jan 18 09:12:46 2015 CST</h3>
+<ul>
+<li><p><a href="http://css-tricks.com/examples/ShapesOfCSS/">css shapes</a></p></li>
+<li><p><a href="https://dev.twitter.com/overview/general/user-profile-images-and-banners">twitter api -- profile image sizes</a></p></li>
+<li><a href="http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/">multiple bgrounds and borders with :before, :after</a>
+<ul>
+<li><a href="http://css-tricks.com/pseudo-element-roundup/">and on css-tricks</a></li>
+</ul></li>
+<li><p><a href="http://css-tricks.com/stripes-css/">css stripes</a></p></li>
+</ul>
+<h3 id="mon-jan-19-110201-2015-cst">Mon Jan 19 11:02:01 2015 CST</h3>
+<ul>
+<li>made a demo icon set on <a href="http://fontello.com/">fontello</a></li>
+</ul>
+<h3 id="tue-jan-20-051534-2015-cst">Tue Jan 20 05:15:34 2015 CST</h3>
+<h3 id="wed-jan-21-094014-2015-cst">Wed Jan 21 09:40:14 2015 CST</h3>
+<ul>
+<li><p><a href="http://css-tricks.com/animating-svg-css/">animating svg</a></p></li>
+<li><p><a href="http://css-tricks.com/snippets/html/glyphs/">glyphs ref</a></p></li>
+<li><p><a href="https://gist.github.com/larrybotha/7881691">scaling SVGs in ie</a></p></li>
+</ul>
+<h3 id="thu-jan-22-064830-2015-cst">Thu Jan 22 06:48:30 2015 CST</h3>
+<ul>
+<li><p><a href="http://stackoverflow.com/questions/8457298/anchor-tag-under-list-in-horizontal-menu-bar-and-its-block-behaviour">make a link easier to click</a></p>
+<pre><code>Adding display:block to the &lt;a&gt; element is not mendatory, but one advantage of it is it will take the full size of his parent (&lt;li&gt;) if you specify one (specially the height).</code></pre></li>
+</ul>
 </body>
 </html>

@@ -460,3 +460,119 @@
 
 * **TODO** see how to looks to show twitter author's picture, maybe clipped in a circle, in social-pick**
     * [see here](http://www.git-tower.com/learn/)
+
+###Sat Jan 17 10:11:38 2015 CST
+* [wp theme unit test](http://codex.wordpress.org/Theme_Unit_Test)
+
+* [deploying wp w/ git](http://culttt.com/2013/04/08/how-to-deploy-wordpress-themes-with-git/)
+
+* [livereload + grunt + wp](http://robandlauren.com/2014/02/05/live-reload-grunt-wordpress/)
+
+* [The Definitive Guide to adding Javascript & CSS to WordPress](http://pressing-matters.io/the-definitive-guide-to-adding-javascript-css-to-wordpress/)
+
+* steps for tooling + wp--let's see how they work ```(so far so good)```
+    1. steps for grunt, compass, susy in wp
+    
+        ```
+        sudo npm init
+        sudo npm install grunt --save-dev
+        sudo npm install grunt-contrib-compass --save-dev
+        sudo gem install susy
+        sudo gem install compass-normalize
+        ```
+    
+    2. here's my config.rb, in theme dir
+        ```
+        require 'susy'
+        require 'compass-normalize'
+        http_path = '/'
+        css_dir = '.'
+        #fonts_dir = 'builds/dev/fonts'
+        sass_dir = 'sass'
+        javascripts_dir = 'js'
+        output_style = :nested
+        #images_dir = 'builds/dev/img'
+        relative_assets = true
+        line_comments = true
+        ```
+
+    3. enqueue livereload in functions.php 
+        ```
+        wp_enqueue_script('eo-play-livereload', 'http://localhost:35729/livereload.js', array(), '', true);
+        ```
+
+    4. set up Gruntfile.js to livereload
+        ```
+        module.exports = function(grunt) {
+        
+          grunt.loadNpmTasks("grunt-contrib-watch");
+          grunt.loadNpmTasks("grunt-contrib-compass");
+        
+          grunt.initConfig({
+        
+            compass: {
+              dev: {
+                options: {
+                  config: 'config.rb'
+                }
+              }
+            },
+        
+        
+            watch: {
+              options: {
+                livereload: true
+              },
+              
+              sass: {
+                files: ['sass/**/*.scss'],
+                tasks: ['compass:dev'] 
+              },
+        
+              php: {
+                files: ['**/*.php'],
+                options: {
+                  livereload: 35729
+                }
+              },
+            
+            } // watch
+        
+          }); // initConfig
+          
+          grunt.registerTask('compile-sass', ['compass:dev']);
+          grunt.registerTask('default', ['watch']);
+        
+        }; // exports
+        ```
+
+###Sun Jan 18 09:12:46 2015 CST
+* [css shapes](http://css-tricks.com/examples/ShapesOfCSS/)
+
+* [twitter api -- profile image sizes](https://dev.twitter.com/overview/general/user-profile-images-and-banners)
+
+* [multiple bgrounds and borders with :before, :after](http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/)
+    * [and on css-tricks](http://css-tricks.com/pseudo-element-roundup/)
+
+* [css stripes](http://css-tricks.com/stripes-css/)
+
+###Mon Jan 19 11:02:01 2015 CST
+* made a demo icon set on [fontello](http://fontello.com/)
+
+###Tue Jan 20 05:15:34 2015 CST
+
+###Wed Jan 21 09:40:14 2015 CST
+* [animating svg](http://css-tricks.com/animating-svg-css/)
+
+* [glyphs ref](http://css-tricks.com/snippets/html/glyphs/)
+
+* [scaling SVGs in ie](https://gist.github.com/larrybotha/7881691)
+
+###Thu Jan 22 06:48:30 2015 CST
+
+* [make a link easier to click](http://stackoverflow.com/questions/8457298/anchor-tag-under-list-in-horizontal-menu-bar-and-its-block-behaviour)
+    ```
+    Adding display:block to the <a> element is not mendatory, but one advantage of it is it will take the full size of his parent (<li>) if you specify one (specially the height).
+    ```
+
+
