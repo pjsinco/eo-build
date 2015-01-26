@@ -574,5 +574,14 @@
     ```
     Adding display:block to the <a> element is not mendatory, but one advantage of it is it will take the full size of his parent (<li>) if you specify one (specially the height).
     ```
+* [edit hosts file on a mac](http://www.tekrevue.com/tip/edit-hosts-file-mac-os-x/)
 
+###Fri Jan 23 06:57:43 2015 CST
+* do we need a tagline by our flag?
 
+* [down triangles with css](http://jhaurawachsman.com/2013/css-triangles-border-stroke/)
+
+* possible bground for social-pick
+    ```
+    background: repeating-linear-gradient(45deg, #F4543B , #F4543B 10px, #ef3f23 10px, #ef3f23 20px);
+    ```
